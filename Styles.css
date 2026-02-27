@@ -160,7 +160,5 @@
                 transition: background-color 0.15s ease;
             }
 
-            @media print{
-                body{color:green;}
-            }
+
 
