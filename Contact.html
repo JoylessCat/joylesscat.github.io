@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>                       <!-- Metadata (Not visible but affects how site runs) -->
+        <meta charset="UTF-8">
+        <title>Tech Store</title>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0
+        ,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="Styles.css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1><strong>Tech Store</strong></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Shop</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="Search Here">
+        </header>
+
+        <aside>
+            <h2>Shop by:</h2>
+            <section>
+                <h3>Category</h3>
+                <hr>
+                <ul>
+                    <li>All Items</li>
+                    <li>Cameras</li>
+                    <li>Laptops</li>
+                    <li>Phones</li>
+                    <li><a href="Game Controller.html">Game Controllers</a></li>
+                    <li>Other</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Price (R)</h3>
+                <hr>
+                <ul>
+                    <li>Under R500</li>
+                    <li>R500 - R1000</li>
+                    <li>R1000 - R2000</li>
+                    <li>Above R2000</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main>                                   
+             <h2>Contact Us:</h2>
+             <form>
+                <div class="inline">
+                <label for="name">Name:</label> <input type="text" placeholder="Enter your name" id="name" name="name">
+                </div>
+                <div class="inline">
+                <label for="email">Email:</label> <input type="email" placeholder="Enter your email" id="email" name="email">
+                </div>
+                <div class="inline">
+                <label for="message">Message:</label> <textarea cols="30" rows="5" placeholder="Enter your message here" id="message" name="message"></textarea>
+                </div>
+
+                <!-- <div> How to do select/drop down boxes.
+                    <label for="subject">Subject:</label>
+                    <select id ="subject">
+                        <optgroup label="Product Issues">
+                            <option value="returns">Returns</option>
+                            <option value="faulty_item">Faulty Item</option>
+                        </optgroup>
+                        <optgroup label="Deliveries">
+                            <option value="delivery">Delivery Info</option>
+                            <option value="order_tracking">Tracking My Order</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="advice">Advice</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+                </div> -->
+                <div class="inline">
+                    <label for="subject">Subject:</label>
+                    <input type="text" list="subjects"id="subject" placeholder="Enter Your Subject">
+                    <datalist id="subjects">
+                        <option value="returns">
+                        <option value="faulty_item">
+                        <option value="delivery">
+                        <option value="order_tracking">
+                        <option value="advice">
+                        <option value="other">
+                    </datalist>
+                </div>
+
+                <div>
+                    <p>Subscribe to future deals by:</p>
+
+                    <label for="newsletter">Newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+
+                    <label for="email">Email:</label>
+                    <input type="checkbox" id="email" name="subscribe" value="email">
+
+                    <label for="post">Post:</label>
+                    <input type="checkbox" id="post" name="subscribe" value="post">
+                </div>
+
+                <div>
+                    <p>How would you like us to respond:</p>
+
+                    <label for="phoneResponse">Phone:</label>
+                    <input type="radio" id="phoneResponse" name="response" value="phone">
+
+                    <label for="emailResponse">Email:</label>
+                    <input type="radio" id="emailResponse" name="response" value="email">
+                </div>
+
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                    <!-- <button type="submit">Submit here</button> --> <!-- Alternative way to do a button with any text-->
+                </div>
+            </form>
+           <iframe
+            width="600"
+            height="450"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+            &q=Space+Needle,Seattle+WA">
+            </iframe>
+         </main>    
+
+        <footer> 
+            <nav>                                    <!-- Footer -->
+                <ul>
+                    <li><a href="https://www.takealot.com">Home</a></li>
+                    <li><a href="Products.html">Shop</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
